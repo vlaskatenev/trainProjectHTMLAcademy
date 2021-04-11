@@ -1,0 +1,37 @@
+.page-footer {
+    margin: 40px 0 25px 0;
+}
+
+.page-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    margin-bottom: 40px;
+}
+
+.social__icon {
+    padding: 12px 0;
+    background-color: #81b3d1;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+@media(min-width: $sm) {
+    .page-footer__wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .page-footer--title {
+        padding-bottom: 0px;
+    }
+
+    .social {
+        margin-bottom: 0;
+    }
+}
