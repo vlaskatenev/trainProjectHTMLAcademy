@@ -207,8 +207,9 @@ img {
   color: white;
 }
 
-.advantages__image-block {
+.advantages__image {
   overflow: hidden;
+  object-fit: cover;
 }
 
 .advantage__text-content {
@@ -222,10 +223,6 @@ img {
 
 .advantage__title {
   padding: 5px 0 10px 0;
-}
-
-.advantages__image {
-  height: 100%;
 }
 
 .interest {
@@ -254,10 +251,9 @@ img {
     padding: 45px;
     text-align: center;
     margin: auto;
-    background: #81b3d1;
     width: 33.33333333333333%;
   }
-  .advantages__image-block {
+  .advantages__image {
     width: 66.66666666666%;
   }
   .advantages__title {
