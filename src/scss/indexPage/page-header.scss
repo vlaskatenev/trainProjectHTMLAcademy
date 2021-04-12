@@ -31,7 +31,7 @@
 
 .header-description {
     background: url("../img/intro-triangle.png") bottom 0 right 50% no-repeat, 
-                url("../img/back-mobile.png") 0 0/100% 100% no-repeat;
+                url("../img/back-mobile.png") 0 0/cover no-repeat;
     padding: 90px 20px;
 }
 
@@ -39,7 +39,7 @@
     width: 100%;
 }
 
-.site-list__item {
+.main-nav__item {
     padding: 20px;
     display: block;
     text-align: center;
@@ -49,6 +49,7 @@
                 inset 1px 0px 0px 1px #9ac2da;
 }
 
+// нужно чтобы не использовать matchMedia в JS
 @media(max-width: $only-mobile) {
     .main-nav__wrapper.main-nav--closed {
         display: none;
@@ -84,7 +85,7 @@
         display: block;
     }
 
-    .site-list__item {
+    .main-nav__item {
         background-color: white;
         color: #3f3f3f;
         box-shadow: none;

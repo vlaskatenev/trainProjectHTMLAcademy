@@ -119,7 +119,7 @@ img {
 }
 
 .header-description {
-  background: url("../img/intro-triangle.png") bottom 0 right 50% no-repeat, url("../img/back-mobile.png") 0 0/100% 100% no-repeat;
+  background: url("../img/intro-triangle.png") bottom 0 right 50% no-repeat, url("../img/back-mobile.png") 0 0/cover no-repeat;
   padding: 90px 20px;
 }
 
@@ -127,7 +127,7 @@ img {
   width: 100%;
 }
 
-.site-list__item {
+.main-nav__item {
   padding: 20px;
   display: block;
   text-align: center;
@@ -164,7 +164,7 @@ img {
     margin: auto;
     display: block;
   }
-  .site-list__item {
+  .main-nav__item {
     background-color: white;
     color: #3f3f3f;
     box-shadow: none;
@@ -182,7 +182,7 @@ img {
   background: url("../img/white-triangle-bottom.png") top 0 right 50% no-repeat, #81b3d1;
 }
 
-.advantages__description-block {
+.advantages__description {
   padding: 80px;
   text-align: center;
   margin: auto;
@@ -206,16 +206,16 @@ img {
   overflow: hidden;
 }
 
-.advantage-list-item__text-content {
+.advantage__text-content {
   padding: 10px;
 }
 
-.advantage-list__item {
+.advantage__item {
   display: flex;
   padding: 20px;
 }
 
-.advantage-list-item__title {
+.advantage__title {
   padding: 5px 0 10px 0;
 }
 
@@ -243,8 +243,9 @@ img {
   .advantages__about {
     display: flex;
     flex-wrap: wrap;
+    background: #81b3d1;
   }
-  .advantages__description-block {
+  .advantages__description {
     padding: 45px;
     text-align: center;
     margin: auto;
@@ -265,36 +266,37 @@ img {
   .advantages__text {
     font-size: 16px;
   }
-  .advantage-list__wrapper {
+  .advantage__wrapper {
     display: flex;
     margin: 40px 0 40px 0;
   }
-  .advantage-list__item {
+  .advantage__item {
     flex-direction: column;
     width: 33.33333333333333%;
     align-items: center;
   }
-  .advantage-list__logo {
+  .advantage__logo {
     align-items: center;
   }
-  .advantage-list-item__title {
+  .advantage__title {
     text-align: center;
     font-size: 16px;
   }
-  .advantage-list-item__text {
+  .advantage__text {
     text-align: center;
     font-size: 16px;
   }
 }
 
 @media (min-width: 1200px) {
-  .advantage-list__wrapper {
+  .advantage__wrapper {
     margin: 40px 0 60px 0;
   }
 }
 
 .page-footer {
-  margin: 40px 0 25px 0;
+  margin-top: 40px;
+  padding-bottom: 25px;
 }
 
 .page-footer__wrapper {
@@ -332,6 +334,11 @@ img {
 body {
   font-family: 'PT Sans';
   font-style: sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
   max-width: 1200px;
+  background-color: white;
   margin: auto;
 }

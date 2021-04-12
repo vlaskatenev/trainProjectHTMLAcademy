@@ -5,28 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Седона - небольшой заслуживающий большего!</title>
+    <title>Седона - город заслуживающий большего!</title>
 </head>
 <body>
-    
-
-<header class="page-header">
+    <div class="container">
+        <header class="page-header">
     <nav class="main-nav">
         <div class="main-nav__wrapper main-nav--closed">
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list">
                 <li>
-                    <a class="site-list__item site-list__item--active"> Главная</a>
+                    <a class="main-nav__item main-nav__item--active"> Главная</a>
                 </li>
                 <li >
-                    <a class="site-list__item" href="photo.html">Фото и видео</a>
+                    <a class="main-nav__item" href="photo.html">Фото и видео</a>
                 </li>
             </ul>
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list">
                 <li>
-                    <a class="site-list__item" href="form.html">Форма отзыва</a>
+                    <a class="main-nav__item" href="form.html">Форма отзыва</a>
                 </li>
                 <li>
-                    <a class="site-list__item" href="#">HTML Academy</a>
+                    <a class="main-nav__item" href="#">HTML Academy</a>
                 </li>
             </ul>
         </div>
@@ -44,7 +43,7 @@
     </div>
 
 </header>
-    <main class="page-main">
+        <main class="page-main">
 
     <section class="about">
         <h2 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -56,9 +55,8 @@
     <section class="advantages">
         <div class="advantages-list">
             <div class="advantages-list__item">
-                <!-- <div class="advantages--float">        -->
                     <div class="advantages__about">
-                        <div class="advantages__description-block">
+                        <div class="advantages__description">
                             <div class="advantages__title title">Настоящий городок</div>
                             <div class="advantages__number text">- №1 -</div>
                             <div class="advantages__text text">
@@ -69,42 +67,41 @@
                             <img src="./img/photo-city@1x.png" alt="" class="advantages__image">
                         </div>
                     </div>
-                <!-- </div> -->
 
-                <div class="advantage-list">
-                    <div class="advantage-list__wrapper">
+                <div class="advantage">
+                    <div class="advantage__wrapper">
 
-                        <div class="advantage-list__item">
-                            <div class="advantage-list__logo advantage-list__logo--house">
+                        <div class="advantage__item">
+                            <div class="advantage__logo">
                                 <img src="./img/icon-house.png" alt="">
                             </div>
-                            <div class="advantage-list-item__text-content">
-                                <h2 class="advantage-list-item__title title">Жилье</h2>
-                                <p class="advantage-list-item__text text">
+                            <div class="advantage__text-content">
+                                <h2 class="advantage__title title">Жилье</h2>
+                                <p class="advantage__text text">
                                     Рекомендуем пожить в настоящем мотеле, все как в кино!
                                 </p>
                             </div>
                         </div>
 
-                        <div class="advantage-list__item">
-                            <div class="advantage-list__logo advantage-list__logo--house">
+                        <div class="advantage__item">
+                            <div class="advantage__logo">
                                 <img src="./img/icon-gift.png" alt="">
                             </div>
-                            <div class="advantage-list-item__text-content">
-                                <h2 class="advantage-list-item__title title">Сувениры</h2>
-                                <p class="advantage-list-item__text text">
+                            <div class="advantage__text-content">
+                                <h2 class="advantage__title title">Сувениры</h2>
+                                <p class="advantage__text text">
                                     Не только китайского, но и местного производтсва!
                                 </p>
                             </div>
                         </div>
 
-                        <div class="advantage-list__item">
-                            <div class="advantage-list__logo advantage-list__logo--house">
+                        <div class="advantage__item">
+                            <div class="advantage__logo">
                                 <img src="./img/icon-burger.png" alt="">
                             </div>
-                            <div class="advantage-list-item__text-content">
-                                <h2 class="advantage-list-item__title title">Еда</h2>
-                                <p class="advantage-list-item__text text">
+                            <div class="advantage__text-content">
+                                <h2 class="advantage__title title">Еда</h2>
+                                <p class="advantage__text text">
                                     Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                                 </p>
                             </div>
@@ -129,7 +126,7 @@
         <img src="./img/map-desktop.png" alt="" class="map__image">
     </section>
 </main>
-    <footer class="page-footer">
+        <footer class="page-footer">
     <div class="page-footer__wrapper">
         <h2 class="page-footer--title title">#VISITSEDONA</h2>
         <div class="social">
@@ -143,13 +140,12 @@
                 <img src="./img/icon-youtube.png" alt="">
             </a>
         </div>
-        <div class="developer">
-            <p class="text">
-                Разработано <img src="./img/htmlacademy.png" alt="" class="developer__htmlacademy">
-            </p>
+        <div class="text">
+                Разработано <img src="./img/htmlacademy.png" alt="">
         </div>
     </div>
 </footer>
+    </div>
 </body>
 <script src="./js/script.js"></script>
 </html>
