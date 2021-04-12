@@ -29,10 +29,6 @@ input::-ms-clear {
   display: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -114,8 +110,17 @@ img {
 
 .main-nav__toggle-button {
   background: transparent;
-  width: 56px;
-  height: 56px;
+  padding: 16px 17.5px;
+}
+
+.main-nav__item--active::before {
+  content: "";
+  position: absolute;
+  margin: 0 20px;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icon-cross.png");
+  right: 0;
 }
 
 .header-description {

@@ -25,8 +25,17 @@
 
 .main-nav__toggle-button {
     background: transparent;
-    width: 56px;
-    height: 56px;
+    padding: 16px 17.5px;
+}
+
+.main-nav__item--active::before {
+    content: "";
+    position: absolute;
+    margin: 0 20px;
+    width: 23px;
+    height: 22px;
+    background-image: url("../img/icon-cross.png");
+    right: 0;
 }
 
 .header-description {
@@ -50,6 +59,7 @@
 }
 
 // нужно чтобы не использовать matchMedia в JS
+// для отключения отображения меню
 @media(max-width: $only-mobile) {
     .main-nav__wrapper.main-nav--closed {
         display: none;

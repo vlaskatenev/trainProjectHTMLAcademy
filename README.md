@@ -13,3 +13,6 @@ gulp
 ### Ссылка для просмотра результата без сборки:
 
 https://vlaskatenev.github.io/trainProjectHTMLAcademy/build/index.html
+
+### Макеты
+https://drive.google.com/drive/folders/1s797_0_l3J65VlADbeTbD9IkOp68f5K2?usp=sharing
