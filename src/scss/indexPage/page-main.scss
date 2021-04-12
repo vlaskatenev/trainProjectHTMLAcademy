@@ -1,18 +1,3 @@
-.title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #3f3f3f;
-    padding-bottom: 45px;
-    text-transform: uppercase;
-    line-height: 1.5;
-}
-
-.text {
-    font-size: 20px;
-    color: #3f3f3f;
-    text-transform: uppercase;
-    line-height: 1.5;
-}
 
 .about {
     padding: 45px;
@@ -21,12 +6,14 @@
     margin: auto;
 }
 
+.advantages__about {
+    background: url("../img/white-triangle-bottom.png") top 0 right 50% no-repeat, $mainColor;
+}
+
 .advantages__description-block {
     padding: 80px;
     text-align: center;
     margin: auto;
-    background-color: $mainColor;
-    background: url("../img/white-triangle-bottom.png") top 0 right 50% no-repeat, #81b3d1;
 }
 
 .advantages__title {
@@ -60,6 +47,10 @@
     padding: 5px 0 10px 0;
 }
 
+.advantages__image {
+    height: 100%;
+}
+
 .interest {
     padding: 20px 20px 50px 20px;
     text-align: center;
@@ -76,22 +67,6 @@
     margin-bottom: 40px;
 }
 
-.button {
-    padding: 20px;
-    width: 100%;
-    background-color: $mainColor;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.5;
-}
-
-.map {
-    overflow: hidden;
-}
-
-
 @media(min-width: $sm) {
     .advantages__about {
         display: flex;
@@ -102,9 +77,8 @@
         padding: 45px;
         text-align: center;
         margin: auto;
-        background: #81b3d1;
+        background: $mainColor;
         width: 33.33333333333333%;
-        height: 256px;
     }
 
     .advantages__image-block {

@@ -1,4 +1,8 @@
 
-alert("hello world!!")
+function clickMenuButton() {
+    const menu = document.querySelector(".main-nav__wrapper");
+    menu.classList.toggle("main-nav__wrapper--close");
+  }
+  
 
 

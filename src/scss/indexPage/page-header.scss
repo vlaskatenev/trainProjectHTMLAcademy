@@ -18,13 +18,13 @@
     color:white;
 }
 
-.main-nav__list {
-    display: none;
-}
-
 .main-nav__wrapper {
     display: flex;
     flex-direction: column;
+}
+
+.main-nav__wrapper.main-nav__wrapper--close {
+    display: none;
 }
 
 .main-nav__toggle-button {
@@ -51,11 +51,6 @@
     color: white;
     box-shadow: inset 0px -1px 1px 0 #678fa7,
                     inset 1px 0px 0px 1px #9ac2da;
-
-    &:hover {
-        background-color: #6997b3;
-        
-    }
 }
 
 @media(min-width: $sm) {
