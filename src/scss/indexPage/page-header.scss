@@ -23,10 +23,6 @@
     flex-direction: column;
 }
 
-.main-nav__wrapper.main-nav__wrapper--close {
-    display: none;
-}
-
 .main-nav__toggle-button {
     background: transparent;
     width: 56px;
@@ -50,7 +46,13 @@
     background-color: $mainColor;
     color: white;
     box-shadow: inset 0px -1px 1px 0 #678fa7,
-                    inset 1px 0px 0px 1px #9ac2da;
+                inset 1px 0px 0px 1px #9ac2da;
+}
+
+@media(max-width: $only-mobile) {
+    .main-nav__wrapper.main-nav--closed {
+        display: none;
+    }
 }
 
 @media(min-width: $sm) {
