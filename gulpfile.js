@@ -47,7 +47,9 @@ const {src, dest} = require("gulp"),
     fileinclude = require("gulp-file-include"),
     del = require("del"),
     scss = require("gulp-sass"),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    autoprefixer = require("autoprefixer"),
+    postcss = require("gulp-postcss");
 
 function browserSync() {
     browsersync.init({
@@ -82,6 +84,7 @@ function clean() {
 
 // изображения копируются в дирректорию path.build.img
 // только если они находятся непосредственно в path.src.img
+// при этом копируются только при перезапуске билда проекта
 function img() {
     return src(allSeparatesSrc("img"))
         .pipe(dest(path.build.img))
@@ -93,6 +96,9 @@ function css() {
         .pipe(scss({
             outputStyle: "expanded"
         }))
+        .pipe(postcss([
+            autoprefixer()
+          ]))
         .pipe(dest(path.build.css))
         .pipe(browsersync.stream())
 }
