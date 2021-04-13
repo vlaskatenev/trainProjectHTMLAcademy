@@ -1,9 +1,9 @@
-.page-footer {
+.footer {
     margin-top: 40px;
     padding-bottom: 25px;
 }
 
-.page-footer__wrapper {
+.footer__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,12 +23,12 @@
 }
 
 @media(min-width: $sm) {
-    .page-footer__wrapper {
+    .footer__wrapper {
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .page-footer--title {
+    .footer--title {
         padding-bottom: 0px;
     }
 

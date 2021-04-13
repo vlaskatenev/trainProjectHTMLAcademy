@@ -83,18 +83,18 @@ img {
   overflow: hidden;
 }
 
-.page-header {
+.header {
   display: flex;
   flex-direction: column;
 }
 
-.page-header__logo {
+.header__logo {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
 }
 
-.main-nav {
+.header-nav {
   position: relative;
   text-align: end;
   font-weight: bold;
@@ -103,17 +103,21 @@ img {
   color: white;
 }
 
-.main-nav__wrapper {
+.header-nav__wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.main-nav__toggle-button {
+.header-nav__toggle-button {
   background: transparent;
   padding: 16px 17.5px;
 }
 
-.main-nav__item--active::before {
+.header-nav__wrapper.header-nav--closed {
+  display: none;
+}
+
+.header-nav__item--active::before {
   content: "";
   position: absolute;
   margin: 0 20px;
@@ -132,7 +136,7 @@ img {
   width: 100%;
 }
 
-.main-nav__item {
+.header-nav__item {
   padding: 20px;
   display: block;
   text-align: center;
@@ -141,26 +145,23 @@ img {
   box-shadow: inset 0px -1px 1px 0 #678fa7, inset 1px 0px 0px 1px #9ac2da;
 }
 
-@media (max-width: 767px) {
-  .main-nav__wrapper.main-nav--closed {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
-  .page-header__logo {
+  .header__logo {
     top: 0;
   }
-  .main-nav {
+  .header-nav {
     font-size: 14px;
   }
-  .main-nav__toggle-button {
-    display: none;
-  }
-  .main-nav__list {
+  .header-nav__wrapper.header-nav--closed {
     display: flex;
   }
-  .main-nav__wrapper {
+  .header-nav__toggle-button {
+    display: none;
+  }
+  .header-nav__list {
+    display: flex;
+  }
+  .header-nav__wrapper {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -169,7 +170,7 @@ img {
     margin: auto;
     display: block;
   }
-  .main-nav__item {
+  .header-nav__item {
     background-color: white;
     color: #3f3f3f;
     box-shadow: none;
@@ -210,6 +211,10 @@ img {
 .advantages__image {
   overflow: hidden;
   object-fit: cover;
+}
+
+.advantages__image img {
+  height: 100%;
 }
 
 .advantage__text-content {
@@ -295,12 +300,12 @@ img {
   }
 }
 
-.page-footer {
+.footer {
   margin-top: 40px;
   padding-bottom: 25px;
 }
 
-.page-footer__wrapper {
+.footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,11 +325,11 @@ img {
 }
 
 @media (min-width: 768px) {
-  .page-footer__wrapper {
+  .footer__wrapper {
     flex-direction: row;
     justify-content: space-around;
   }
-  .page-footer--title {
+  .footer--title {
     padding-bottom: 0px;
   }
   .social {
@@ -339,6 +344,7 @@ body {
 }
 
 .container {
+  min-width: 320px;
   max-width: 1200px;
   background-color: white;
   margin: auto;

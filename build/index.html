@@ -9,31 +9,31 @@
 </head>
 <body>
     <div class="container">
-        <header class="page-header">
-    <nav class="main-nav">
-        <div class="main-nav__wrapper main-nav--closed">
-            <ul class="main-nav__list">
+        <header class="header">
+    <nav class="header-nav">
+        <div class="header-nav__wrapper header-nav--closed">
+            <ul class="header-nav__list">
                 <li>
-                    <a class="main-nav__item main-nav__item--active" onclick="clickMenuButton()"> Главная</a>
+                    <a class="header-nav__item header-nav__item--active" onclick="clickMenuButton()"> Главная</a>
                 </li>
                 <li >
-                    <a class="main-nav__item" href="photo.html">Фото и видео</a>
+                    <a class="header-nav__item" href="photo.html">Фото и видео</a>
                 </li>
             </ul>
-            <ul class="main-nav__list">
+            <ul class="header-nav__list">
                 <li>
-                    <a class="main-nav__item" href="form.html">Форма отзыва</a>
+                    <a class="header-nav__item" href="form.html">Форма отзыва</a>
                 </li>
                 <li>
-                    <a class="main-nav__item" href="#">HTML Academy</a>
+                    <a class="header-nav__item" href="#">HTML Academy</a>
                 </li>
             </ul>
         </div>
-        <a href="#" class="page-header__logo">
-            <img src="./img/logotyle-mobile.png" alt="Седония" class="page-header__logo-image">
+        <a href="#" class="header__logo">
+            <img src="./img/logotyle-mobile.png" alt="Седония" class="header__logo-image">
         </a>
 
-        <button class="main-nav__toggle-button" onclick="clickMenuButton()">
+        <button class="header-nav__toggle-button" onclick="clickMenuButton()">
             <img src="./img/icon-menu.png" alt="">
         </button>
     </nav>
@@ -43,7 +43,7 @@
     </div>
 
 </header>
-        <main class="page-main">
+        <main>
 
     <section class="about">
         <h2 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -63,7 +63,9 @@
                                 Седона не аттракцион для туристов, там течет своя жизнь
                             </div>
                         </div>
-                            <img src="./img/photo-city@1x.png" alt="" class="advantages__image">
+                        <div class="advantages__image">
+                            <img src="./img/photo-city@1x.png" alt="">
+                        </div>
                     </div>
 
                 <div class="advantage">
@@ -124,9 +126,9 @@
         <img src="./img/map-desktop.png" alt="" class="map__image">
     </section>
 </main>
-        <footer class="page-footer">
-    <div class="page-footer__wrapper">
-        <h2 class="page-footer--title title">#VISITSEDONA</h2>
+        <footer class="footer">
+    <div class="footer__wrapper">
+        <h2 class="footer--title title">#VISITSEDONA</h2>
         <div class="social">
             <a href="#" class="social__icon">
                 <img src="./img/icon-twitter.png" alt="">

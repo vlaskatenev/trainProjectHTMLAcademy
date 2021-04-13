@@ -33,6 +33,10 @@
 .advantages__image {
     overflow: hidden;
     object-fit: cover;
+
+    img {
+        height: 100%;
+    }
 }
 
 .advantage__text-content {
