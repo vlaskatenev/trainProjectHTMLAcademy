@@ -230,12 +230,13 @@ img {
 
 .advantages__image {
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .advantages__image img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .advantage__text-content {
