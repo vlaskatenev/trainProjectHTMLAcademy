@@ -37,7 +37,7 @@ const path = {
     clean: "./" + projectFolder + "/"
 }
 
-function allSeparatesSrc(source) {
+function allPagesSrc(source) {
     return Object.keys(pagesSrc).map(el => pagesSrc[el][source])
 }
 
@@ -62,7 +62,7 @@ function browserSync() {
 }
 
 function html() {
-    return src([...allSeparatesSrc("html"), "!/**/_*.html"])
+    return src([...allPagesSrc("html"), "!/**/_*.html"])
         .pipe(fileinclude())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
@@ -85,8 +85,9 @@ function clean() {
 // изображения копируются в дирректорию path.build.img
 // только если они находятся непосредственно в path.src.img
 // при этом копируются только при перезапуске билда проекта
+// watchFiles для вставки новых файлов не работает!!!
 function img() {
-    return src(allSeparatesSrc("img"))
+    return src(allPagesSrc("img"))
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())
 }
