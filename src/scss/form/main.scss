@@ -1,0 +1,180 @@
+.forms {
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.yourself {
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.yourself__title {
+    padding-bottom: 0;
+}
+
+.yourself__item {
+    display: flex;
+    margin-top: 20px;
+}
+
+.yourself__item--text {
+    padding-top: 15px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.yourself__input {
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    background: #f1f1f1;
+    padding: 20px;
+  }
+  
+.yourself__input::placeholder {
+    color: #bbbbbb;
+}
+
+.contacts {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border-top: 1px solid #e5e5e5;
+}
+
+  .contacts__title {
+    padding-bottom: 0;
+}
+
+.contacts__item {
+    margin-top: 20px;
+    position: relative;
+}
+
+.contacts__item--text {
+    padding-top: 15px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.contacts__input {
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    background: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .contacts__input::placeholder {
+    color: #bbbbbb;
+  }
+
+  .contacts__item--phone::after {
+      content: "";
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/phone.png");
+      z-index: 2;
+  }
+
+  .contacts__item--phone::before {
+    content: "";
+    width: 59px;
+    height: 59px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    background-color: #e6e6e6;
+}
+
+  .contacts__item--mail::after {
+    content: "";
+    position: absolute;
+    right: 22px;
+    bottom: 23px;
+    width: 16px;
+    height: 12px;
+    background-image: url(../img/mail.png);
+    z-index: 2;
+}
+
+  .contacts__item--mail::before {
+    content: "";
+    width: 59px;
+    height: 59px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    background-color: #e6e6e6;
+}
+
+.impression__title {
+    padding-top: 5px;
+}
+
+/* Radio */
+.radio {
+    position: relative;
+    margin-bottom: 45px;
+    margin-top: 25px;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+.radio__input {
+    appearance: none;
+    position: absolute;
+}
+
+.radio__label {
+    padding-left: 25px;
+    color: #444;
+    cursor: pointer;
+}
+
+.radio__label::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.radio__label::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #333333;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+}
+
+.radio__input:checked + .radio__label::after {
+    opacity: 1;
+}
+
+
+@media (min-width: 768px) {
+    .yourself__title {
+        text-align: center;
+        font-size: 16px;
+    }
+}

@@ -11,6 +11,10 @@ const pagesSrc = {
     photo: {
         html: sourceFolder + "/html/photo/photo.html",
         img: sourceFolder + "/html/photo/img/*"
+    },
+    form: {
+        html: sourceFolder + "/html/form/form.html",
+        img: sourceFolder + "/html/form/img/*"
     }
 }
 
