@@ -388,6 +388,12 @@ img {
   padding-bottom: 40px;
 }
 
+.forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,6 +403,10 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.form-button {
+  margin: 20px 20px 20px 20px;
 }
 
 .yourself {
@@ -460,6 +470,7 @@ img {
 .contacts__title {
   text-align: center;
   padding: 25px 0 15px;
+  position: relative;
 }
 
 .contacts__item {
@@ -563,6 +574,10 @@ img {
 .attractions__title {
   padding: 25px 0 0;
   text-align: center;
+}
+
+.attraction--items {
+  display: block;
 }
 
 /* Radio */
@@ -678,6 +693,7 @@ img {
 .emotion__title {
   text-align: center;
   padding: 25px 0 25px;
+  position: relative;
 }
 
 .textarea {
@@ -714,9 +730,164 @@ img {
 }
 
 @media (min-width: 768px) {
+  .yourself {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 50%;
+    padding: 0 60px 0 60px;
+    border-top: none;
+  }
   .yourself__title {
     text-align: center;
     font-size: 16px;
+  }
+  .contacts {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    padding: 0 60px 0 60px;
+    border-top: none;
+  }
+  .contacts__title::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    border-bottom: 1px solid #e5e5e5;
+    left: 0;
+    bottom: 25px;
+  }
+  .contacts__title::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    border-bottom: 1px solid #e5e5e5;
+    right: 0;
+    bottom: 25px;
+  }
+  .impression {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 50%;
+    padding: 0 60px 0 60px;
+    border-top: none;
+  }
+  .attractions {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    padding: 0 60px 0 60px;
+    border-top: none;
+  }
+  .attraction--items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+  }
+  .attractions__title {
+    position: relative;
+    width: 100%;
+  }
+  .attractions__title::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    border-bottom: 1px solid #e5e5e5;
+    left: 0;
+    bottom: 15px;
+  }
+  .attractions__title::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    border-bottom: 1px solid #e5e5e5;
+    right: 0;
+    bottom: 15px;
+  }
+  .checkbox {
+    width: 50%;
+  }
+  .emotion {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    padding: 0 60px 0 60px;
+    border-top: none;
+  }
+  .emotion__title::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    border-bottom: 1px solid #e5e5e5;
+    left: 0;
+    bottom: 35px;
+  }
+  .emotion__title::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    border-bottom: 1px solid #e5e5e5;
+    right: 0;
+    bottom: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .yourself {
+    padding: 0 120px 0 120px;
+  }
+  .contacts {
+    padding: 0 120px 0 120px;
+  }
+  .contacts__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contacts__title::before {
+    width: 280px;
+  }
+  .contacts__title::after {
+    width: 280px;
+  }
+  .impression {
+    padding: 0 120px 0 120px;
+  }
+  .attractions {
+    padding: 0 120px 0 120px;
+  }
+  .attractions__title::before {
+    width: 280px;
+  }
+  .attractions__title::after {
+    width: 280px;
+  }
+  .emotion {
+    padding: 0 120px 0 120px;
+  }
+  .emotion__title::before {
+    width: 280px;
+  }
+  .emotion__title::after {
+    width: 280px;
   }
 }
 
