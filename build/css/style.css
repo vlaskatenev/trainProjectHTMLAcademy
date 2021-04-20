@@ -384,6 +384,10 @@ img {
   }
 }
 
+.about__title {
+  padding-bottom: 40px;
+}
+
 .forms {
   padding: 20px;
 }
@@ -402,10 +406,12 @@ img {
 .yourself {
   width: 100%;
   padding-bottom: 25px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .yourself__title {
-  padding-bottom: 0;
+  text-align: center;
+  padding: 25px 0 0;
 }
 
 .yourself__item {
@@ -457,6 +463,7 @@ img {
 }
 
 .contacts__title {
+  text-align: center;
   padding-bottom: 0;
 }
 
@@ -541,8 +548,24 @@ img {
   background-color: #e6e6e6;
 }
 
+.impression {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+}
+
 .impression__title {
-  padding-bottom: 5px;
+  text-align: center;
+  padding: 25px 0 5px;
+}
+
+.attractions {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+}
+
+.attractions__title {
+  padding: 25px 0 0;
+  text-align: center;
 }
 
 /* Radio */
@@ -595,6 +618,101 @@ img {
 
 .radio__input:checked + .radio__label::after {
   opacity: 1;
+}
+
+/* checkbox */
+.checkbox {
+  position: relative;
+  margin-bottom: 45px;
+  margin-top: 25px;
+  padding-left: 40px;
+  padding-top: 15px;
+}
+
+.checkbox__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox__label {
+  padding-left: 25px;
+  color: #444;
+  cursor: pointer;
+}
+
+.checkbox__label::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: #f1f1f1;
+  border-radius: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.checkbox__label::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-image: url(../img/tick.png);
+  opacity: 0;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 2;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  opacity: 1;
+}
+
+.emotion {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 50px;
+}
+
+.emotion__title {
+  text-align: center;
+  padding: 25px 0 25px;
+}
+
+.textarea {
+  width: 100%;
+  height: 160px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  resize: none;
+}
+
+.textarea::-webkit-input-placeholder {
+  color: #444;
+  font-size: 16px;
+}
+
+.textarea::-moz-placeholder {
+  color: #444;
+  font-size: 16px;
+}
+
+.textarea:-ms-input-placeholder {
+  color: #444;
+  font-size: 16px;
+}
+
+.textarea::-ms-input-placeholder {
+  color: #444;
+  font-size: 16px;
+}
+
+.textarea::placeholder {
+  color: #444;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {

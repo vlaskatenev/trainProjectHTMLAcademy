@@ -1,7 +1,7 @@
 <main>
 
     <section class="about">
-        <h2 class="title">Оставте свой отзыв</h2>
+        <h2 class="about__title title">Оставте свой отзыв</h2>
         <p class="text">
             Помогите нашим клиентам стать лучше! Оставте отзыв о них, а так же о посещенных вами достопремечательностях!
         </p>
@@ -9,9 +9,6 @@
 
     <section class="forms">
         <form action="./" method="POST" class="form">
-            <div class="impression">
-                <h2 class="form__title title">Ваше общее впечатление:</h2>
-            </div>
             <div class="yourself">
                 <h2 class="yourself__title title">Представтесь:</h2>
                 <div class="yourself__item">
@@ -19,8 +16,6 @@
                     <input 
                         type="text" 
                         class="yourself__input yourself__input--small" 
-                        name="numusers"
-                        id="numusers"
                         min="1"
                         max="5"
                         placeholder="Введи имя"
@@ -31,10 +26,6 @@
                     <input 
                         type="text" 
                         class="yourself__input yourself__input--small" 
-                        name="numusers"
-                        id="numusers"
-                        min="1"
-                        max="5"
                         placeholder="Введи фамилию"
                     >
                 </div>
@@ -43,10 +34,6 @@
                     <input 
                         type="text" 
                         class="yourself__input yourself__input--small" 
-                        name="numusers"
-                        id="numusers"
-                        min="1"
-                        max="5"
                         placeholder="Введи отчество"
                     >
                 </div>
@@ -59,8 +46,6 @@
                         <input 
                             type="text" 
                             class="contacts__input contacts__input--small" 
-                            name="numusers"
-                            id="numusers"
                             placeholder="Введите телефон"
                         >
                     </div>
@@ -71,8 +56,6 @@
                         <input 
                             type="text" 
                             class="contacts__input contacts__input--small"
-                            name="numusers"
-                            id="numusers"
                             placeholder="Введите e-mail"
                         >
                     </div>
@@ -85,37 +68,56 @@
                 <h2 class="impression__title title">Ваше общее впечатление:</h2>
 
                 <div class="radio">
-                    <input class="radio__input" name="male" type="radio" id="radio_1" checked>
+                    <input class="radio__input" name="1" type="radio" id="radio_1" checked>
                     <label class="radio__label" for="radio_1">Скорее положительное</label>
                 </div>
             
                 <div class="radio">
-                    <input class="radio__input" name="male" type="radio" id="radio_2">
+                    <input class="radio__input" name="1" type="radio" id="radio_2">
                     <label class="radio__label" for="radio_2">Скорее отрицательное</label>
                 </div>
 
                 <div class="radio">
-                    <input class="radio__input" name="male" type="radio" id="radio_3">
+                    <input class="radio__input" name="1" type="radio" id="radio_3">
                     <label class="radio__label" for="radio_3">Затрудняюсь ответить</label>
                 </div>
 
             </div>
 
             <div class="attractions">
-                <h2 class="form__title title">Посещенные достопримечательности:</h2>
+                <h2 class="attractions__title title">Посещенные достопримечательности:</h2>
+
+                <div class="checkbox">
+                    <input class="checkbox__input" id="scales1" type="checkbox">
+                    <label class="checkbox__label" for="scales1">Мост Дьявола</label>
+                </div>
+            
+                <div class="checkbox">
+                    <input class="checkbox__input" id="scales2" type="checkbox">
+                    <label class="checkbox__label" for="scales2">Гора-Колокол</label>
+                </div>
+
+                <div class="checkbox">
+                    <input class="checkbox__input" id="scales3" type="checkbox">
+                    <label class="checkbox__label" for="scales3">Слайд-Парк</label>
+                </div>
+
+                <div class="checkbox">
+                    <input class="checkbox__input" id="scales4" type="checkbox">
+                    <label class="checkbox__label" for="scales4">Красные скалы</label>
+                </div>
+
             </div>
             <div class="emotion">
-                <h2 class="form__title title">Опишите свои эмоции:</h2>
+                <h2 class="emotion__title title">Опишите свои эмоции:</h2>
+                <textarea 
+                    class="textarea" 
+                    placeholder="Опишите подробно все свои восторги" 
+                ></textarea>
             </div>
+
+            <button class="interest-button button">Отправить отзыв</button>
+
         </form>
     </section>
-
-    <section class="interest">
-        <h2 class="interest-title title">Заинтересовались?</h2>
-        <p class="interest-text text">
-            Укажите предпологаемые дыты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне
-        </p>
-        <button class="interest-button button">Найти гостинницу</button>
-    </section>
-
 </main>
