@@ -388,10 +388,6 @@ img {
   padding-bottom: 40px;
 }
 
-.forms {
-  padding: 20px;
-}
-
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,13 +401,13 @@ img {
 
 .yourself {
   width: 100%;
-  padding-bottom: 25px;
+  padding: 0 20px 25px 20px;
   border-top: 1px solid #e5e5e5;
 }
 
 .yourself__title {
   text-align: center;
-  padding: 25px 0 0;
+  padding: 25px 0 5px;
 }
 
 .yourself__item {
@@ -457,14 +453,13 @@ img {
 
 .contacts {
   width: 100%;
-  padding-top: 25px;
-  padding-bottom: 30px;
+  padding: 0 20px 30px;
   border-top: 1px solid #e5e5e5;
 }
 
 .contacts__title {
   text-align: center;
-  padding-bottom: 0;
+  padding: 25px 0 15px;
 }
 
 .contacts__item {
@@ -550,6 +545,7 @@ img {
 
 .impression {
   width: 100%;
+  padding: 0 20px 0 20px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -560,6 +556,7 @@ img {
 
 .attractions {
   width: 100%;
+  padding: 0 20px 0 20px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -675,6 +672,7 @@ img {
   width: 100%;
   border-top: 1px solid #e5e5e5;
   margin-bottom: 50px;
+  padding: 0 20px 0 20px;
 }
 
 .emotion__title {
