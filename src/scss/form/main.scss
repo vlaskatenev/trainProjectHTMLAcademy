@@ -306,23 +306,11 @@
     }
 
     .contacts__title::before {
-        content: "";
-        position: absolute;
-        height: 1px;
         width: 125px;
-        border-bottom: 1px solid #e5e5e5;
-        left: 0;
-        bottom: 25px;
     }
 
     .contacts__title::after {
-        content: "";
-        position: absolute;
-        height: 1px;
         width: 125px;
-        border-bottom: 1px solid #e5e5e5;
-        right: 0;
-        bottom: 25px;
     }
 
 
@@ -353,23 +341,11 @@
     }
 
     .attractions__title::before {
-        content: "";
-        position: absolute;
-        height: 1px;
         width: 125px;
-        border-bottom: 1px solid #e5e5e5;
-        left: 0;
-        bottom: 15px;
     }
 
     .attractions__title::after {
-        content: "";
-        position: absolute;
-        height: 1px;
         width: 125px;
-        border-bottom: 1px solid #e5e5e5;
-        right: 0;
-        bottom: 15px;
     }
 
     .checkbox {
@@ -383,23 +359,11 @@
     }
 
     .emotion__title::before {
-        content: "";
-        position: absolute;
-        height: 1px;
         width: 125px;
-        border-bottom: 1px solid #e5e5e5;
-        left: 0;
-        bottom: 35px;
     }
 
     .emotion__title::after {
-        content: "";
-        position: absolute;
-        height: 1px;
         width: 125px;
-        border-bottom: 1px solid #e5e5e5;
-        right: 0;
-        bottom: 35px;
     }
 }
 
