@@ -707,6 +707,10 @@ img {
   font-size: 16px;
 }
 
+.forms--text {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .border::after {
     content: "";
@@ -770,13 +774,25 @@ img {
     position: relative;
     width: 100%;
   }
-  .checkbox {
+  .checkbox, .forms--button {
     width: 50%;
   }
   .emotion {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
+  }
+  .forms--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .forms--text {
+    display: block;
+    padding-top: 20px;
   }
 }
 
