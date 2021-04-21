@@ -402,7 +402,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 0;
 }
 
 .form {
@@ -588,7 +588,7 @@ img {
 /* Radio */
 .radio, .checkbox {
   position: relative;
-  margin: 25px  0 45px;
+  margin: 25px 0 45px;
   padding: 15px 0 0 40px;
 }
 
@@ -727,7 +727,7 @@ img {
     all: unset;
   }
   .forms {
-    padding: 0 60px 0 60px;
+    padding: 0 60px 0;
   }
   .yourself {
     -webkit-box-ordinal-group: 3;
@@ -782,7 +782,7 @@ img {
 
 @media (min-width: 1200px) {
   .forms {
-    padding: 0 120px 0 120px;
+    padding: 0 120px 0;
   }
   .border::before, .border::after {
     width: 280px;

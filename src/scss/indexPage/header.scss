@@ -62,14 +62,6 @@
                 inset 1px 0px 0px 1px #9ac2da;
 }
 
-// нужно чтобы не использовать matchMedia в JS
-// для отключения отображения меню
-// @media(max-width: $only-mobile) {
-//     .header-nav__wrapper.header-nav--closed {
-//         display: none;
-//     }
-// }
-
 @media(min-width: $sm) {
 
     .header__logo {

@@ -14,7 +14,7 @@
 
 .forms {
     display: flex;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0;
 }
 
 .form {
@@ -162,7 +162,7 @@
 /* Radio */
 .radio, .checkbox {
     position: relative;
-    margin: 25px  0 45px;
+    margin: 25px 0 45px;
     padding: 15px 0 0 40px;
 }
 
@@ -261,8 +261,7 @@
     font-size: 16px;
   }
 
-@media (min-width: 768px) {
-
+@media (min-width: $sm) {
     .border::after {
         content: "";
         position: absolute;
@@ -285,7 +284,7 @@
     }
 
     .forms {
-        padding: 0 60px 0 60px;
+        padding: 0 60px 0;
     }
 
     .yourself {
@@ -334,9 +333,9 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $lg) {
     .forms {
-        padding: 0 120px 0 120px;
+        padding: 0 120px 0;
     }
 
     .border::before, .border::after {
