@@ -384,6 +384,16 @@ img {
   }
 }
 
+.border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 100vw;
+  height: 1px;
+  border-top: 1px solid #e5e5e5;
+}
+
 .about__title {
   padding-bottom: 40px;
 }
@@ -392,6 +402,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 20px 0 20px;
 }
 
 .form {
@@ -405,14 +416,10 @@ img {
           justify-content: center;
 }
 
-.form-button {
-  margin: 20px 20px 20px 20px;
-}
-
 .yourself {
   width: 100%;
-  padding: 0 20px 25px 20px;
-  border-top: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+  position: relative;
 }
 
 .yourself__title {
@@ -463,8 +470,8 @@ img {
 
 .contacts {
   width: 100%;
-  padding: 0 20px 30px;
-  border-top: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .contacts__title {
@@ -556,8 +563,7 @@ img {
 
 .impression {
   width: 100%;
-  padding: 0 20px 0 20px;
-  border-top: 1px solid #e5e5e5;
+  position: relative;
 }
 
 .impression__title {
@@ -567,8 +573,7 @@ img {
 
 .attractions {
   width: 100%;
-  padding: 0 20px 0 20px;
-  border-top: 1px solid #e5e5e5;
+  position: relative;
 }
 
 .attractions__title {
@@ -685,9 +690,8 @@ img {
 
 .emotion {
   width: 100%;
-  border-top: 1px solid #e5e5e5;
   margin-bottom: 50px;
-  padding: 0 20px 0 20px;
+  position: relative;
 }
 
 .emotion__title {
@@ -730,13 +734,32 @@ img {
 }
 
 @media (min-width: 768px) {
+  .border::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    border-bottom: 1px solid #e5e5e5;
+    right: 0;
+    top: 40px;
+  }
+  .border::before {
+    width: 125px;
+    left: 0;
+    top: 40px;
+  }
+  .impression.border::after, .impression.border::before,
+  .yourself.border::after, .yourself.border::before {
+    all: unset;
+  }
+  .forms {
+    padding: 0 60px 0 60px;
+  }
   .yourself {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     width: 50%;
-    padding: 0 60px 0 60px;
-    border-top: none;
   }
   .yourself__title {
     text-align: center;
@@ -746,28 +769,19 @@ img {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    padding: 0 60px 0 60px;
     border-top: none;
-  }
-  .contacts__title::before {
-    width: 125px;
-  }
-  .contacts__title::after {
-    width: 125px;
   }
   .impression {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     width: 50%;
-    padding: 0 60px 0 60px;
     border-top: none;
   }
   .attractions {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
-    padding: 0 60px 0 60px;
     border-top: none;
   }
   .attraction--items {
@@ -783,12 +797,6 @@ img {
     position: relative;
     width: 100%;
   }
-  .attractions__title::before {
-    width: 125px;
-  }
-  .attractions__title::after {
-    width: 125px;
-  }
   .checkbox {
     width: 50%;
   }
@@ -796,23 +804,16 @@ img {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
-    padding: 0 60px 0 60px;
     border-top: none;
-  }
-  .emotion__title::before {
-    width: 125px;
-  }
-  .emotion__title::after {
-    width: 125px;
   }
 }
 
 @media (min-width: 1200px) {
-  .yourself {
+  .forms {
     padding: 0 120px 0 120px;
   }
-  .contacts {
-    padding: 0 120px 0 120px;
+  .border::before, .border::after {
+    width: 280px;
   }
   .contacts__item {
     display: -webkit-box;
@@ -826,32 +827,14 @@ img {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .contacts__title::before {
-    width: 280px;
+  .attraction--items {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: auto;
   }
-  .contacts__title::after {
-    width: 280px;
-  }
-  .impression {
-    padding: 0 120px 0 120px;
-  }
-  .attractions {
-    padding: 0 120px 0 120px;
-  }
-  .attractions__title::before {
-    width: 280px;
-  }
-  .attractions__title::after {
-    width: 280px;
-  }
-  .emotion {
-    padding: 0 120px 0 120px;
-  }
-  .emotion__title::before {
-    width: 280px;
-  }
-  .emotion__title::after {
-    width: 280px;
+  .checkbox {
+    width: auto;
   }
 }
 
