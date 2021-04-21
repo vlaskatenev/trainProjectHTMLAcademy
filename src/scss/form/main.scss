@@ -49,7 +49,7 @@
     width: 100%;
     outline: none;
     font-size: 15px;
-    background: #f1f1f1;
+    background: $inputColor;
     padding: 20px;
   }
   
@@ -84,7 +84,7 @@
     width: 100%;
     outline: none;
     font-size: 15px;
-    background: #f1f1f1;
+    background: $inputColor;
     padding: 20px;
   }
   
@@ -160,21 +160,19 @@
 }
 
 /* Radio */
-.radio {
+.radio, .checkbox {
     position: relative;
-    margin-bottom: 45px;
-    margin-top: 25px;
-    padding-left: 40px;
-    padding-top: 15px;
+    margin: 25px  0 45px;
+    padding: 15px 0 0 40px;
 }
 
-.radio__input {
+.radio__input, .checkbox__input {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-.radio__label {
+.radio__label, .checkbox__label {
     padding-left: 25px;
     color: #444;
     cursor: pointer;
@@ -185,7 +183,7 @@
     display: block;
     width: 56px;
     height: 56px;
-    background-color: #f1f1f1;
+    background-color: $inputColor;
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -207,29 +205,9 @@
     z-index: 2;
 }
 
-.radio__input:checked + .radio__label::after {
+.radio__input:checked + .radio__label::after,
+.checkbox__input:checked + .checkbox__label::after {
     opacity: 1;
-}
-
-/* checkbox */
-.checkbox {
-    position: relative;
-    margin-bottom: 45px;
-    margin-top: 25px;
-    padding-left: 40px;
-    padding-top: 15px;
-}
-
-.checkbox__input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
-
-.checkbox__label {
-    padding-left: 25px;
-    color: #444;
-    cursor: pointer;
 }
 
 .checkbox__label::before {
@@ -237,7 +215,7 @@
     display: block;
     width: 56px;
     height: 56px;
-    background-color: #f1f1f1;
+    background-color: $inputColor;
     border-radius: 20%;
     position: absolute;
     top: 0;
@@ -258,10 +236,6 @@
     z-index: 2;
 }
 
-.checkbox__input:checked + .checkbox__label::after {
-    opacity: 1;
-}
-
 .emotion {
     width: 100%;
     margin-bottom: 50px;
@@ -277,7 +251,7 @@
 .textarea {
     width: 100%;
     height: 160px;
-    background-color: #f1f1f1;
+    background-color: $inputColor;
     padding: 20px;
     resize: none;
 }
@@ -332,7 +306,6 @@
     .impression {
         order: 1;
         width: 50%;
-        border-top: none;
     }
   
     .attractions {
@@ -358,7 +331,6 @@
 
     .emotion {
         order: 5;
-        border-top: none;
     }
 }
 
